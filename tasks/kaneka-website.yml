@@ -1,0 +1,9 @@
+---
+
+- name: grab the repo
+  git:
+      repo: git@github.com:KanekaLanguage/Kaneka-Website.git # required. git, SSH, or HTTP(S) protocol address of the git repository.
+      dest: '{{kaneka_directory}}/Kaneka-Website' # required. The path of where the repository should be checked out. This parameter is required, unless C(clone) is set to C(no).
+
+
+# - name: create the alias

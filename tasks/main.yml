@@ -1,2 +1,8 @@
 ---
 # tasks file for ansible-role-kaneka-dev
+
+# Create some directories
+
+- file: path='{{kaneka_directory}}' state=directory
+
+- import_tasks: kaneka-website.yml
